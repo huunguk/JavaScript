@@ -17,15 +17,32 @@
         const total = kor + eng + math;
         const avg = total / 3
 
-
-
-
         document.write(`<h2>${name}님 성적표</h2>`);
         document.write(`<h3>국어점수 : ${kor}점</h3>`);
         document.write(`<h3>영어점수 : ${eng}점</h3>`);
         document.write(`<h3>수학점수 : ${math}점</h3>`);
         document.write(`<h3>총점 : ${total}점</h3>`);
-        document.write(`<h3>총점 : ${avg}점</h3>`);
+        document.write(`<h3>평균 : ${avg}점</h3>`);
+
+        if(avg>=90){
+            console.log('<h3>학점: A학점<h3>');
+            document.write('<h3>학점: A학점<h3>');
+        }else if(avg>=80){
+            console.log('<h3>학점:B학점<h3>');
+            document.write('<h3>학점:B학점<h3>');
+        }else if(avg>=70){
+            console.log('<h3>학점: C학점<h3>');
+            document.write('<h3>학점: C학점<h3>');
+        }else if(avg>=60){
+            console.log('<h3>학점: D학점<h3>');
+            document.write('<h3>학점: D학점<h3>');
+        }else{
+            console.log('<h3>학점: F학점<h3>');
+            document.write('<h3>학점: F학점<h3>');
+        }
+
+
+
     </script>
 </body>
 </html>
