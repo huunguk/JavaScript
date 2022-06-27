@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //생성자를 이용한 객체 생성
+        // 장점: 객체를 여러개 만들기 편하다.
+        function Dog(name, color){
+            this.name = name;
+            this.color = color;
+            this.sleep = function() {
+                return `${this.name}가 잠을 잡니다`;
+            };
+        }
+
+
+        //생성자1
+        const Rucy = new Dog('루시','흰색');
+            console.log(Rucy.name);
+            console.log(Rucy.color);
+            console.log(Rucy.sleep());
+
+        //생성자2
+        const Bin = new Dog('빈이','흰색');
+            console.log(Bin.name);
+            console.log(Bin.color);
+    </script>
+</body>
+</html>

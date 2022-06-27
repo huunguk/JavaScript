@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        //1에서 10까지의 수중 홀수의 합
+
+
+        /*
+        do{조건식의 결과가 참인 동안 반복적으로 실행하고자 하는 실행문;
+        }while(조건식);
+        */
+
+        let cnt = 1, hap = 0;
+        do{
+            document.write(`<p>${cnt}</p>`);
+            hap = hap + cnt
+            cnt = cnt + 2;
+        }while(cnt <= 10);
+        document.write(`<p>합계 : ${hap}</p>`);
+        
+
+    </script>
+</body>
+</html> 
