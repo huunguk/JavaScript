@@ -9,8 +9,8 @@
 </head>
 <body>
     <div class="alert-box" id="alert">
-        <p id="title">alert 박스</p> 
-        <button id="close">X</button>
+        <p id="title">alert 알림 박스</p> 
+        <button id="close">닫기버튼 X</button>
     </div>
     <button onclick="알림창1열기('아이디입력')">버튼1</button>
     <button onclick="알림창2열기('비번입력')">버튼2</button>
@@ -19,8 +19,6 @@
     <script>
     document.getElementById('close').addEventListener('click', function(){
         document.getElementById('alert').style.display='none';
-    
-        
     });
     </script>
 </body>
