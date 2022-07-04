@@ -1,0 +1,28 @@
+#turntable ul {
+  list-style: none;
+}
+
+#turntable .container {
+  width: 30%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+#turntable .slider {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#turntable .item>img {
+  width: 100%;
+}
+
+
+#turntable .container ul {
+  -webkit-transition: all 0.25s cubic-bezier(1, .01, .32, 1);
+  -o-transition: all 0.25s cubic-bezier(1, .01, .32, 1);
+  transition: all 0.25s cubic-bezier(1, .01, .32, 1);
+}
